@@ -8,13 +8,18 @@ body {
 
 .container{
   width: 80%;
-  margin: 0 auto;}
+  margin: 0 auto;
+}
 
 .fixed-header, .fixed-footer{
     width: 100%;
+    height: 50px;
     position: fixed;        
     background: rgb(32, 86, 202);
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .fixed-header{
@@ -24,9 +29,11 @@ body {
 nav a{
   color: #fff;
   text-decoration: none;
-  padding: 7px 25px;
-  display: inline-block;
-  align-items: center;
+  padding: 25px 12px;
+  min-height: 30px;
+  text-transform: uppercase;
+  width: 100%
+  justify-content: space-around;
 }
 
 .fixed-footer{
@@ -34,18 +41,22 @@ nav a{
 }
 
 .linkbar{
-  display: inline-block;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+h1{
+  text-align: center;
 }
 
 .link {
-  color:lightgrey;
+  color:white;
   padding-left: 25px;
 }
 
 a:hover, a:active {
   color: black;
-
 }
 
 .slider {
@@ -84,14 +95,32 @@ a:hover, a:active {
 #slide-3:target ~ .image-container {
   left: -1000px;
 }
-.buttons {
+.bottom-buttons {
   position: relative;
   top: -20px;
 }
-.buttons a {
+.bottom-buttons a {
   display: inline-block;
   height: 15px;
   width: 15px;
   border-radius: 50px;
-  background-color: lightgreen;
+  background-color: lightgray;
+}
+
+.side-buttons a {
+  display: inline-block;
+  height: 30px;
+  width :15px;
+  border-radius: 30px;
+  background-color: lightgray;
+  position: relative;
+  top: -175px;
+}
+
+.left{
+  left: 200px;
+}
+
+.right{
+
 }
