@@ -4,6 +4,7 @@ body {
   text-decoration: none;
   overflow-x: scroll;
   overflow-y: visible;
+  margin-bottom: 30px;
 }
 
 
@@ -68,7 +69,6 @@ a:hover, a:active {
 }
 .image-container {
   width: 1500px;
-  
   background-color: pink;
   clear: both;
   position: relative;
